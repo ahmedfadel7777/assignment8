@@ -1,0 +1,75 @@
+.all-users{
+    background-color: rgb(248, 248, 248);
+}
+.all-users .arrow {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00000033;
+    border-radius: 50%;
+}
+
+.all-users .search .inp i{
+    position: absolute;
+    top: 30%;
+    right: 10px;
+}
+
+
+.add-btn{
+    border: none;
+    background-color: #FEAF00;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 3px;
+    transition: all 0.4s;
+}
+
+.add-btn:hover{
+    background-color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+.all-users table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.all-users th{
+    color: rgba(0, 0, 0, 0.5);
+}
+.all-users td{
+    font-weight: 600;
+}
+.all-users th, .all-users td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.all-users td img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.all-users td.image-cell {
+    width: auto;
+    white-space: nowrap;
+}
+
+.all-users td.image-cell img {
+    display: inline-block;
+    max-width: 100px;
+}

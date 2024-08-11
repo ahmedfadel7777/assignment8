@@ -1,0 +1,19 @@
+
+.title h4{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.add-user input{
+    background-color: #f8f8f8;
+}
+.form-data{
+    background-color: #fff;
+    padding: 50px;
+}
+.save-btn{
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 10px;
+}

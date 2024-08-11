@@ -1,0 +1,36 @@
+section .head h3::before{
+    content: "";
+    width: 5px;
+    height: 25px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: -10px;
+    border-radius: 2px;
+}
+.side-bar{
+    width: 20%;
+    background-color: rgb(242, 234, 225);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.ignore-height{
+    height: 200px;
+}
+h6{
+    width: fit-content;
+    text-align: left;
+}
+
+li{
+    width: 200px;
+    cursor: pointer;
+    padding: 7px 14px;
+}
+
+.bg-link{
+    background-color: var(--main-color);
+}

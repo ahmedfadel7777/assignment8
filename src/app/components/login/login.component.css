@@ -1,0 +1,34 @@
+.loginForm{
+    height: 100vh;
+    background-color: #F8D442;
+}
+
+.login{
+    margin-top: 30vh;
+    background-color: #fff;
+}
+.loginForm .login .title .head{
+    position: relative;
+}
+.loginForm .login .title .head::before{
+    content: "";
+    width: 8px;
+    height: 40px;
+    background-color: #F8D442;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    border-radius: 2px;
+}
+
+.loginForm .login .title p{
+    opacity: 0.5;
+}
+
+button{
+    background-color: #FEAF00;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+}

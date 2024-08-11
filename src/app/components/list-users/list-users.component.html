@@ -1,0 +1,28 @@
+<section class="all-users">
+    <div class="head d-flex justify-content-between p-3">
+        <h2 class="font-xl font-bold">Users List</h2>
+        <button class="add-btn" [routerLink]="['/dashboard/adduser']">Add new user</button>
+    </div>
+    <table class="table">
+        <thead>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Enroll Number</th>
+            <th>Date of admission</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of usersList" class="cursor-pointer" [routerLink]="['/dashboard/profile',user.id]">
+                <td class="image-cell"><img [src]="user.image" alt=""></td>
+                <td>{{user.firstName}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.phone}}</td>
+                <td>{{user.ip}}</td>
+                <td>{{user.birthDate}}</td>
+                <td><i class="fa-solid fa-pen mx-3 main-color cursor-pointer" [routerLink]="['/dashboard/updateuser',user.id]"></i><i class="fa-solid fa-trash mx-3 main-color cursor-pointer" (click)="deleteUser(user.id)"></i></td>
+            </tr>
+        </tbody>
+    </table>
+</section>

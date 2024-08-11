@@ -1,0 +1,38 @@
+<section class="add-user">
+    <div class="title">
+        <h4 class="font-bold">Add User</h4>
+    </div>
+    <div class="form-data mt-5 rounded-5">
+        <form class="my-5" [formGroup]="userData" (ngSubmit)="addUser(userData)">
+            <div class="row justify-content-center">
+                <div class="col-md-6 my-2">
+                    <label for="fName">First Name</label>
+                    <input formControlName="firstName" type="text" id="fName" class="form-control" placeholder="Enter Your First Name">
+                </div>
+                <div class="col-md-6 my-2">
+                    <label for="lName">Last Name</label>
+                    <input formControlName="lastName" type="text" id="lName" class="form-control" placeholder="Enter Your Last Name">
+                </div>
+                <div class="col-md-6 my-2">
+                    <label for="email">Email</label>
+                    <input formControlName="email" type="email" id="email" class="form-control" placeholder="Enter Your Email">
+                </div>
+                <div class="col-md-6 my-2">
+                    <label for="age">Age</label>
+                    <input formControlName="age" type="number" id="age" class="form-control" placeholder="Enter Your Age">
+                </div>
+                <div class="col-md-6 my-2">
+                    <label for="phone">Phone Number</label>
+                    <input formControlName="phone" type="tel" id="phone" class="form-control" placeholder="Enter Your Phone Number">
+                </div>
+                <div class="col-md-6 my-2">
+                    <label for="date">Birth Date</label>
+                    <input formControlName="birthDate" type="text" id="date" class="form-control" placeholder="Enter Your Birth Date">
+                </div>
+                <div class="col-md-4 mt-4">
+                    <button class="save-btn w-100">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
